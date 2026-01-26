@@ -1,0 +1,7 @@
+[theme]
+base = "light"
+primaryColor = "#B49308"
+# backgroundColor = "#ffffff"
+
+[client]
+showSidebarNavigation = false

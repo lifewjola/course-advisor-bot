@@ -1,0 +1,73 @@
+:root {
+    --babcock-gold: #B49308;
+    --babcock-blue: #002855; 
+    --babcock-blue-light: #003366;
+    --text-white: #FFFFFF;
+    --bg-light: #F8F9FA;
+}
+
+h1, h2, h3 {
+    color: var(--babcock-blue) !important;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    border-bottom: 3px solid var(--babcock-gold);
+    padding-bottom: 10px;
+}
+
+[data-testid="stSidebar"] {
+    background-color: var(--babcock-blue-light);
+}
+
+[data-testid="stSidebar"] h1, 
+[data-testid="stSidebar"] h2, 
+[data-testid="stSidebar"] h3, 
+[data-testid="stSidebar"] label, 
+[data-testid="stSidebar"] div {
+    color: var(--text-white) !important;
+}
+
+div.stButton > button {
+    background-color: var(--babcock-gold);
+    color: var(--babcock-blue);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+div.stButton > button:hover {
+    background-color: #D4B010;
+    color: var(--babcock-blue);
+    border: 1px solid var(--babcock-blue);
+}
+
+
+[data-testid="stChatMessage"] {
+    background-color: #f0f2f6;
+    border-radius: 10px;
+    padding: 10px;
+    border-left: 5px solid var(--babcock-gold);
+}
+
+[data-testid="stChatMessage"][data-testid="user"] {
+    background-color: #e8f0fe;
+    border-left: 5px solid var(--babcock-blue);
+}
+
+a {
+    color: var(--babcock-blue) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--babcock-gold) !important;
+    text-decoration: underline;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--babcock-gold) !important;
+    box-shadow: 0 0 0 1px var(--babcock-gold) !important;
+}
