@@ -8,7 +8,7 @@ from clients import supabase
 from modules.upserter import add_chunk, delete_chunk, update_chunk
 
 from utils import load_css
-load_css("app/styles.css")
+load_css("styles.css")
 
 def check_password():
     """Returns True if the user is logged in."""

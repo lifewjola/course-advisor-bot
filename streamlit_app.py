@@ -6,7 +6,7 @@ from modules.generator import get_answer
 from modules.bot_logger import log_interaction
 
 from utils import load_css
-load_css("app/styles.css")
+load_css("styles.css")
 
 with st.sidebar:
     st.image("bucclogo.png", width=150) 
@@ -29,7 +29,7 @@ with st.sidebar:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-st.title("🎓 Course Advisor AI")
+st.title("🎓 Babcock University Course Advisor AI")
 st.markdown(
     """
     **Welcome.** I am here to help you navigate academics as a BUCC student. 

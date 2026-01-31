@@ -44,24 +44,6 @@ div.stButton > button:hover {
     border: 1px solid var(--babcock-blue);
 }
 
-
-[data-testid="stChatMessage"] {
-    background-color: #f0f2f6;
-    border-radius: 10px;
-    padding: 10px;
-    border-left: 5px solid var(--babcock-gold);
-}
-
-[data-testid="stChatMessage"][data-testid="user"] {
-    background-color: #e8f0fe;
-    border-left: 5px solid var(--babcock-blue);
-}
-
-a {
-    color: var(--babcock-blue) !important;
-    text-decoration: none;
-}
-
 a:hover {
     color: var(--babcock-gold) !important;
     text-decoration: underline;

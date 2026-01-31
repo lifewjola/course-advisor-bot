@@ -31,15 +31,21 @@ def get_answer(query: str, context: str, chat_history: list) -> str:
         role="user",
         parts=[types.Part(text=final_prompt)]
     ))
+
+    google_search_tool = types.Tool(
+        google_search=types.GoogleSearch()
+    )
     
     try:
         response = gemini_client.models.generate_content(
             model=MODEL_NAME,
             contents=contents,
             config=types.GenerateContentConfig(
-                temperature=0.3,
-                max_output_tokens=1000,
-                system_instruction=SYSTEM_INSTRUCTION
+            response_mime_type="text/plain",
+            tools=[google_search_tool],
+            temperature=0.3,
+            max_output_tokens=1000,
+            system_instruction=SYSTEM_INSTRUCTION
             )
         )
         return response.text
