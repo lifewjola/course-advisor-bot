@@ -29,7 +29,9 @@ with st.sidebar:
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-st.title("🎓 Babcock University Course Advisor AI")
+st.image("babcock.png", )
+
+st.title("Course Advisor AI")
 st.markdown(
     """
     **Welcome.** I am here to help you navigate academics as a BUCC student. 
