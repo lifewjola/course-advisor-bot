@@ -1,7 +1,7 @@
 from clients import gemini_client
 from google.genai import types
 
-EMBEDDING_MODEL = "text-embedding-005"
+EMBEDDING_MODEL = "gemini-embedding-001"
 
 def get_embedding(text: str) -> list[float]:
     """
@@ -13,6 +13,7 @@ def get_embedding(text: str) -> list[float]:
             contents=text,
             config=types.EmbedContentConfig(
                 task_type="RETRIEVAL_DOCUMENT",
+                output_dimensionality=768
             )
         )
         
