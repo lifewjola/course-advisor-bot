@@ -1,7 +1,7 @@
 from clients import gemini_client
 from google.genai import types
 
-EMBEDDING_MODEL = "text-embedding-004"
+EMBEDDING_MODEL = "text-embedding-005"
 
 def get_embedding(text: str) -> list[float]:
     """
